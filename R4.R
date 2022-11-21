@@ -6,7 +6,7 @@ library(ggplot2)
 rm(list = ls())
 
 
-
+setwd("/Users/hildanateklegiorgis/Desktop/Data 331/Rproject-4")
 course <- read_excel('Course.xlsx', .name_repair = "universal")
 registration <- read_excel('Registration.xlsx', .name_repair = "universal")
 student <-  read_excel('Student.xlsx', .name_repair = "universal")
