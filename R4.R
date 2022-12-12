@@ -31,4 +31,9 @@ TotalBalanceByPlan <- all_df %>%
 TotalCostByMajor <- all_df %>%
   group_by(Title) %>%
   summarise(Total.Cost = sum(Total.Cost))
+hist(TotalCostByMajor$Cost,
+     col = 'blue',
+     main = 'Cost per major graph',
+     xlab = 'Cost',
+     ylab = 'Title')
 
